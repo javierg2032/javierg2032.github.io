@@ -1,11 +1,10 @@
-/* General styles */
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  overflow-x: hidden; /* Evita el desplazamiento lateral */
+  overflow-x: hidden;
 }
 
 body {
@@ -18,19 +17,17 @@ body {
   align-items: center;
 }
 
-/* Box-sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Header styles */
 .header {
-  position: fixed; /* Hace que el header se mantenga fijo en la pantalla */
-  top: 0; /* Lo fija en la parte superior */
-  left: 0; /* Lo alinea a la izquierda */
-  z-index: 1000; /* Asegura que quede por encima de otros elementos */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,14 +36,12 @@ body {
   color: #d4ba83;
   width: 100%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  max-width: auto; /* Ajustar el max-width al de la image-section */
-  margin: 0 auto; /* Centrar el header */
+  max-width: auto;
+  margin: 0 auto;
 }
 
-
-
 .header-title {
-  color: #d4ba83; /* Cambia a tu color preferido */
+  color: #d4ba83;
   margin-left: 10px;
 }
 
@@ -69,13 +64,12 @@ body {
   filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.75));
 }
 
-/* Heading styles */
 h1 {
   font-family: "Jacques Francois", serif;
   font-size: 3em;
   margin: 0;
-  display: flex; /* Alinea la imagen y el texto horizontalmente */
-  align-items: end; /* Centra la imagen y el texto verticalmente */
+  display: flex;
+  align-items: end;
   color: #ffffff;
 }
 
@@ -88,7 +82,6 @@ h2 {
   color: #ffffff;
 }
 
-/* Paragraph styles */
 p {
   font-size: larger;
   color: #ffffff;
@@ -98,10 +91,9 @@ table legend {
   color: #ffffff;
 }
 
-/* Table styles */
 table {
-  border-collapse: separate; /* Las celdas no comparten bordes */
-  border-spacing: 0.25px; /* Espacio entre celdas */
+  border-collapse: separate;
+  border-spacing: 0.25px;
 }
 
 th,
@@ -109,7 +101,6 @@ td {
   padding: 20px;
 }
 
-/* Row styles */
 #filaBarbaro {
   border: 2px solid #d35c43;
   background-color: #ea735b;
@@ -180,8 +171,7 @@ a {
   text-decoration: none;
 }
 
-/* Image section styles */
-.image-section {
+.index-section {
   background-color: #d4ba83;
   padding: 40px;
   margin: 10px auto;
@@ -193,10 +183,22 @@ a {
   flex-direction: column;
 }
 
+.class-section {
+  background-color: #d4ba83;
+  padding: 40px;
+  margin: 10px auto;
+  margin-top: 135px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+
 .container {
-  display: flex; /* Alinea imágenes en fila */
+  display: flex;
   justify-content: center;
-  gap: 20px; /* Espacio entre imágenes */
+  gap: 20px;
   width: 100%;
   height: auto;
   max-width: 1600px;
@@ -204,16 +206,13 @@ a {
   filter: drop-shadow(0px 0px 12px rgb(26, 26, 26));
   flex-direction: row;
   text-align: center;
-  display: inline-block; /* Cambio la estrucutra del contenedor*/
-  
+  display: inline-block;
 }
 
-
-
 .image-container {
-  display: flex; /* Establece un contenedor flex */
-  justify-content: space-between; /* Espacia los elementos entre sí */
-  align-items: flex-start; /* Alinea los elementos en la parte superior */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   height: auto;
 }
 
@@ -222,32 +221,33 @@ a {
   font-size: larger;
 }
 
-.divImagenClase {
-  width: 20%;
+.imagenClase {
+  width: fit-content;
+  height: auto;
   text-align: center;
+  box-sizing: border-box;
 }
 
-.divImagenClase img{
+.imagenClase img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .container img {
-  width: 300px; /* Ancho fijo para todas las imágenes */
-  height: 450px; /* Altura fija para mantener la forma rectangular */
-  object-fit: contain; /* Ajusta la imagen sin recorte */
-  transition: transform 0.8s ease-in-out, clip-path 0.8s ease-in-out; /* Mantiene los efectos */
+  width: 300px;
+  height: 450px;
+  object-fit: contain;
+  transition: transform 0.8s ease-in-out, clip-path 0.8s ease-in-out;
   margin-bottom: 7.25px;
   margin-top: 7.25px;
   filter: brightness(0.95);
 }
 
 .container img:hover {
-  clip-path: inset(0); /* Elimina el recorte completamente */
+  clip-path: inset(0);
   transform: scale(1.25);
   filter: brightness(1);
 }
 
-/* Footer styles */
 .footer {
   display: flex;
   align-items: center;
