@@ -1,0 +1,260 @@
+/* General styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden; /* Evita el desplazamiento lateral */
+}
+
+body {
+  background-color: #f8f8f8;
+  cursor: url("./Imagenes/D20MouseClaro.svg"), auto;
+  font-family: "Jacques Francois", serif;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+  position: fixed; /* Hace que el header se mantenga fijo en la pantalla */
+  top: 0; /* Lo fija en la parte superior */
+  left: 0; /* Lo alinea a la izquierda */
+  z-index: 1000; /* Asegura que quede por encima de otros elementos */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  color: #d4ba83;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  max-width: auto; /* Ajustar el max-width al de la image-section */
+  margin: 0 auto; /* Centrar el header */
+}
+
+
+
+.header-title {
+  color: #d4ba83; /* Cambia a tu color preferido */
+  margin-left: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.logoclase {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.75));
+}
+
+/* Heading styles */
+h1 {
+  font-family: "Jacques Francois", serif;
+  font-size: 3em;
+  margin: 0;
+  display: flex; /* Alinea la imagen y el texto horizontalmente */
+  align-items: end; /* Centra la imagen y el texto verticalmente */
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "Jacques Francois", serif;
+  font-size: 2.5em;
+  margin: 0;
+  display: flex;
+  align-items: end;
+  color: #ffffff;
+}
+
+/* Paragraph styles */
+p {
+  font-size: larger;
+  color: #ffffff;
+}
+
+table legend {
+  color: #ffffff;
+}
+
+/* Table styles */
+table {
+  border-collapse: separate; /* Las celdas no comparten bordes */
+  border-spacing: 0.25px; /* Espacio entre celdas */
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+/* Row styles */
+#filaBarbaro {
+  border: 2px solid #d35c43;
+  background-color: #ea735b;
+}
+
+#filaBardo {
+  border: 2px solid #c484c7;
+  background-color: #e5a9e8;
+}
+
+#filaBrujo {
+  border: 2px solid #e87bdc;
+  background-color: #fe84f1;
+}
+
+#filaClerigo {
+  border: 2px solid #699acd;
+  background-color: #9ebedf;
+}
+
+#filaDruida {
+  border: 2px solid #a3ca30;
+  background-color: #bddb63;
+}
+
+#filaExplorador {
+  border: 2px solid #58ad45;
+  background-color: #84da71;
+}
+
+#filaGeneral {
+  border: 2px solid #c5c5c5;
+  background-color: #fafafa;
+}
+
+#filaGuerrero {
+  border: 2px solid #cf7221;
+  background-color: #f4a058;
+}
+
+#filaHechicero {
+  border: 2px solid #b46322;
+  background-color: #e1a16d;
+}
+
+#filaMago {
+  border: 2px solid #287fc7;
+  background-color: #77b2e3;
+}
+
+#filaMonje {
+  border: 2px solid #325f78;
+  background-color: #4f91b5;
+}
+
+#filaPaladin {
+  border: 2px solid #cb9747;
+  background-color: #f0c97b;
+}
+
+#filaPicaro {
+  border: 2px solid #606a73;
+  background-color: #8d9fac;
+}
+
+a {
+  font-family: "Jacques Francois", serif;
+  text-decoration: none;
+}
+
+/* Image section styles */
+.image-section {
+  background-color: #d4ba83;
+  padding: 40px;
+  margin: 10px auto;
+  margin-top: 135px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex; /* Alinea imágenes en fila */
+  justify-content: center;
+  gap: 20px; /* Espacio entre imágenes */
+  width: 100%;
+  height: auto;
+  max-width: 1600px;
+  margin: 10px auto;
+  filter: drop-shadow(0px 0px 12px rgb(26, 26, 26));
+  flex-direction: row;
+  text-align: center;
+  display: inline-block; /* Cambio la estrucutra del contenedor*/
+  
+}
+
+
+
+.image-container {
+  display: flex; /* Establece un contenedor flex */
+  justify-content: space-between; /* Espacia los elementos entre sí */
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+  height: auto;
+}
+
+.divParrafos {
+  width: 55%;
+  font-size: larger;
+}
+
+.divImagenClase {
+  width: 20%;
+  text-align: center;
+}
+
+.divImagenClase img{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.container img {
+  width: 300px; /* Ancho fijo para todas las imágenes */
+  height: 450px; /* Altura fija para mantener la forma rectangular */
+  object-fit: contain; /* Ajusta la imagen sin recorte */
+  transition: transform 0.8s ease-in-out, clip-path 0.8s ease-in-out; /* Mantiene los efectos */
+  margin-bottom: 7.25px;
+  margin-top: 7.25px;
+  filter: brightness(0.95);
+}
+
+.container img:hover {
+  clip-path: inset(0); /* Elimina el recorte completamente */
+  transform: scale(1.25);
+  filter: brightness(1);
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  color: #d4ba83;
+  width: 100%;
+  max-width: 1200px;
+}
